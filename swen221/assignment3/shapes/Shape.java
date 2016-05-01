@@ -24,18 +24,18 @@ public interface Shape {
 	 * @return
 	 */
 	public Rectangle boundingBox();
-	
+
 	/**
 	 * @return
 	 * 			The total width (x + width)
 	 */
 	public int getTotalWidth();
-	
+
 	/**
 	 * @return
 	 * 			The total height (y + height)
 	 */
 	public int getTotalHeight();
 
-	
+
 }

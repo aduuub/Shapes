@@ -6,15 +6,15 @@ public class Rectangle implements Shape{
 	private double y;
 	private double width;
 	private double height;
-	
-	
+
+
 	public Rectangle(double x, double y, double width, double height){
 		this.x = x;
 		this.y = y;
 		this.width = width;
 		this.height = height;
 	}
-	
+
 	/**
 	 * Determine whether or not the given point is contained within this shape.
 	 * 
@@ -29,7 +29,7 @@ public class Rectangle implements Shape{
 				&& y >= this.y
 				&& y < this.y + this.height;
 	}
-	
+
 	/**
 	 * Determine a <i>bounding box</i> of the current shape. A bounding box is a
 	 * box that will fit around the entire shape and, hence, can be used to
@@ -42,9 +42,9 @@ public class Rectangle implements Shape{
 	public Rectangle boundingBox() {
 		return this;
 	}
-	
+
 	// getters and setters
-	
+
 	public double getX(){return this.x;}
 	public double getY(){return this.y;}
 	public double getWidth(){return this.width;}
@@ -52,7 +52,7 @@ public class Rectangle implements Shape{
 
 	@Override
 	public int getTotalWidth() {
-	return (int) (this.width + this.x);
+		return (int) (this.width + this.x);
 	}
 
 	@Override

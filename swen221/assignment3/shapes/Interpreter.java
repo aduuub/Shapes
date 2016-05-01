@@ -212,8 +212,8 @@ public class Interpreter {
 		}
 
 		skipWhiteSpace();
-		
-		
+
+
 		if(index < input.length())
 			lookahead = input.charAt(index);
 
